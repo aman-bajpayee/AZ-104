@@ -11,8 +11,8 @@ New-AzResourceGroup -Name $rg -Location $region
 
 #Create subnet
 $workloadSubnet = New-AzVirtualNetworkSubnetConfig
--Name "default" 
--AddressPrefix 192.168.0.0/24
+  -Name "default" 
+  -AddressPrefix 192.168.0.0/24
 
 #Create virtual network
 $vnet = New-AzVirtualNetwork
